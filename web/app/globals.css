@@ -1,0 +1,108 @@
+/* Dark theme matching the desktop app's DARK_QSS (../main.py) and
+   config.json theme block — this app is dark-only, same as the original. */
+:root {
+  --bg: #131722;
+  --panel: #1e222d;
+  --border: #2a2e39;
+  --border-light: #363a45;
+  --text: #d1d4dc;
+  --text-muted: #787b86;
+  --up: #26a69a;
+  --down: #ef5350;
+  --accent: #2962ff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  color-scheme: dark;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 12px;
+  -webkit-font-smoothing: antialiased;
+}
+
+button, input, select, textarea {
+  font: inherit;
+  color: inherit;
+}
+
+input, select, textarea {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 4px 6px;
+}
+input:focus, select:focus, textarea:focus {
+  outline: 1px solid var(--accent);
+}
+
+button {
+  background: var(--border);
+  border: 1px solid var(--border-light);
+  border-radius: 3px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+button:hover {
+  background: var(--border-light);
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.group-box {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.group-title {
+  color: var(--text-muted);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 6px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+}
+th {
+  text-align: left;
+  color: var(--text-muted);
+  font-weight: 500;
+  padding: 3px 4px;
+  border-bottom: 1px solid var(--border);
+}
+td {
+  padding: 3px 4px;
+  border-bottom: 1px solid var(--border);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-light);
+  border-radius: 4px;
+}

@@ -1,0 +1,15 @@
+# local config holding your API keys — never commit
+config.json
+
+# runtime data
+.cache/
+*.db
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# web/ (Next.js) — web/.gitignore also covers node_modules, .next, .env*, etc.
+# scoped to that directory; nothing extra needed at the repo root.

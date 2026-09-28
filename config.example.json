@@ -1,0 +1,25 @@
+{
+  "alpaca": {
+    "api_key": "PKWSFO3XVPZPQ3ZWI3FW2WD4WF",
+    "api_secret": "FmFSCxBmJDaFJM7WkkbfSzpwtxfZVW6Tm8aCCP1BBMt",
+    "base_url": "https://paper-api.alpaca.markets",
+    "feed": "iex"
+  },
+  "default_ticker": "SPY",
+  "default_timeframe": "1d",
+  "paper_trading": {
+    "starting_balance": 10000.0
+  },
+  "polling_interval_seconds": 30,
+  "theme": {
+    "background": "#131722",
+    "grid": "#1e222d",
+    "text": "#d1d4dc",
+    "candle_up": "#26a69a",
+    "candle_down": "#ef5350",
+    "accent": "#2962ff",
+    "poc": "#ffeb3b",
+    "vah": "#26a69a",
+    "val": "#ef5350"
+  }
+}
